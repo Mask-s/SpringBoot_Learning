@@ -17,7 +17,8 @@ public class HelloConfig extends WebMvcConfigurationSupport {
 
     @Override
     protected void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/webjars/**")
-                .addResourceLocations("/webjars/");
+        /*registry.addResourceHandler("/webjars/**")
+                .addResourceLocations("/webjars/");*/
+        registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
     }
 }
