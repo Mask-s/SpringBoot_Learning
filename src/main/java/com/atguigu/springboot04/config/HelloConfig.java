@@ -12,6 +12,7 @@ public class HelloConfig extends WebMvcConfigurationSupport {
     protected void addViewControllers(ViewControllerRegistry registry) {
        // super.addViewControllers(registry);
         registry.addViewController("/atguigu").setViewName("success");
+
     }
 
     @Override
